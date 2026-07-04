@@ -118,6 +118,18 @@ To execute the SQL audit and analysis queries, run:
 ```bash
 python scripts/run_sql_analysis.py
 ```
+```markdown
+### SQL Quality Audit Example
+
+The SQL audit queries verify that no critical data quality issues remain after the Python cleaning process.
+
+![SQL quality audit](images/sql_quality_audit.png)
+
+### SQL Financial Analysis Example
+
+The SQL analysis queries produce financial insights such as revenue by agency, margin by activity and budget variance.
+
+![SQL financial analysis](images/sql_financial_analysis.png)
 ## Output
 
 The final cleaned dataset contains:
