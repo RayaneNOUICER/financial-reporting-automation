@@ -72,7 +72,52 @@ The cleaned file is exported to:
 ```text
 data/cleaned/financial_reporting_cleaned.xlsx
 ```
+## SQL Analysis
 
+After the cleaned Excel file is generated, the project creates a local SQLite database to run SQL audit and financial analysis queries.
+
+The SQLite database is created from:
+
+```text
+data/cleaned/financial_reporting_cleaned.xlsx
+```
+
+The database file is generated here:
+
+```text
+data/cleaned/financial_reporting.db
+```
+
+The SQL queries are stored in:
+
+```text
+sql/01_financial_analysis_queries.sql
+```
+
+The SQL part of the project includes:
+
+- Data quality audit queries
+- Duplicate checks
+- Missing value checks
+- Invalid agency name checks
+- Negative expense checks
+- Abnormal client count checks
+- Revenue analysis by agency
+- Margin analysis by agency and activity
+- Budget variance analysis
+- Monthly revenue trend analysis
+
+To create the SQLite database, run:
+
+```bash
+python scripts/create_sqlite_database.py
+```
+
+To execute the SQL audit and analysis queries, run:
+
+```bash
+python scripts/run_sql_analysis.py
+```
 ## Output
 
 The final cleaned dataset contains:
