@@ -118,7 +118,6 @@ To execute the SQL audit and analysis queries, run:
 ```bash
 python scripts/run_sql_analysis.py
 ```
-```markdown
 ### SQL Quality Audit Example
 
 The SQL audit queries verify that no critical data quality issues remain after the Python cleaning process.
