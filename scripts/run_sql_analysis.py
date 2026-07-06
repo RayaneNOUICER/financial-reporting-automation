@@ -2,7 +2,6 @@ from pathlib import Path
 import sqlite3
 import pandas as pd
 
-
 # ============================================================
 # 1. Project paths
 # ============================================================
@@ -21,7 +20,6 @@ SQL_FILE = (
     / "sql"
     / "01_financial_analysis_queries.sql"
 )
-
 
 # ============================================================
 # 2. SQL query execution
@@ -69,7 +67,6 @@ def run_sql_analysis() -> None:
                 print("No rows returned.")
             else:
                 print(result.to_string(index=False))
-
 
 # ============================================================
 # 3. Script entry point

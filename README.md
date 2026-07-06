@@ -54,10 +54,17 @@ financial-reporting-automation/
 ├── sql/
 │   └── 01_financial_analysis_queries.sql
 ├── powerbi/
+│   └── financial_reporting_dashboard.pbix
 ├── images/
+│   ├── icons/
+│   │   ├── revenue_euro_icon.png
+│   │   ├── margin_trend_icon.png
+│   │   ├── rate_percent_icon.png
+│   │   └── variance_balance_icon.png
 │   ├── cleaning_summary.png
 │   ├── sql_quality_audit.png
-│   └── sql_financial_analysis.png
+│   ├── sql_financial_analysis.png
+│   └── powerbi_dashboard.png
 ├── README.md
 └── requirements.txt
 ```
@@ -146,6 +153,23 @@ The SQL audit queries verify that no critical data quality issues remain after t
 The SQL analysis queries produce financial insights such as revenue by agency, margin by activity and budget variance.
 
 ![SQL financial analysis](images/sql_financial_analysis.png)
+
+## Power BI Dashboard
+
+The cleaned dataset is used to build a Power BI dashboard that summarizes key financial reporting indicators.
+
+The dashboard includes:
+
+- Total revenue
+- Total actual margin
+- Average margin rate
+- Revenue variance
+- Revenue by agency
+- Actual margin by activity
+- Revenue variance by agency
+- Monthly revenue trend
+
+![Power BI dashboard](images/powerbi_dashboard.png)
 
 ## Output
 
