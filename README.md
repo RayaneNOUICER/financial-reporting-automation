@@ -39,6 +39,8 @@ The script also creates financial performance indicators:
 
 ## Project Structure
 
+The repository follows this logical structure:
+
 ```text
 financial-reporting-automation/
 ├── data/
