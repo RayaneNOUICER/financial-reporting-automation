@@ -61,6 +61,9 @@ financial-reporting-automation/
 │   │   ├── margin_trend_icon.png
 │   │   ├── rate_percent_icon.png
 │   │   └── variance_balance_icon.png
+│   ├── raw_data_issues.png
+│   ├── raw_data_example.png
+│   ├── cleaned_data_output.png
 │   ├── cleaning_summary.png
 │   ├── sql_quality_audit.png
 │   ├── sql_financial_analysis.png
@@ -88,6 +91,23 @@ The cleaned file is exported to:
 ```text
 data/cleaned/financial_reporting_cleaned.xlsx
 ```
+## Before / After Cleaning
+
+The raw Excel dataset initially contained several data quality issues, including duplicate rows, missing values, invalid agency names, negative actual expenses, inconsistent dates and abnormal client counts.
+
+The Python cleaning script applies business rules to remove or correct these issues, then exports a clean dataset enriched with financial indicators and ready for SQL analysis and Power BI reporting.
+
+### Data Quality Issues Summary
+
+![Raw data issues](images/raw_data_issues.png)
+
+### Raw Dataset Example
+
+![Raw data example](images/raw_data_example.png)
+
+### Cleaned Dataset Output
+
+![Cleaned data output](images/cleaned_data_output.png)
 
 ## Cleaning Summary
 
